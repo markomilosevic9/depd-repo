@@ -27,11 +27,11 @@ The pipeline logic is placed within few .sql scripts meant to be executed one-by
         mock_data_incremental_insert.sql - handles insertion of incremental mock data sample
         queries_part_b.sql - contains analytical queries
 ```
-Please note that after loading of incremental mock data sample, the re-execution of `etl_source_to_datamart.sql` script is required. 
+Note that after loading of incremental mock data sample, the re-execution of `etl_source_to_datamart.sql` script is required. 
 
 ## Running the pipeline
 
-After cloning the repository, you can run the pipeline using Docker. To do so, you can execute following commands in sequence.
+After cloning the repository or downloading files, you can run the pipeline using Docker. To do so, you can execute following commands in sequence.
 
 From the project root directory:
 
@@ -63,6 +63,6 @@ Password: storage
 
 Once connected, you can execute the SQL scripts manually in the same order as described above.
 
-Please note, Docker is used just to simplify environment setup and it is not required. The solution itself can be executed on any PostgreSQL instance, after creation of DB (e.g. ats_data), successful connection and execution of SQL scripts in aforementioned order.
+Please note: Docker is used just to simplify environment setup and it is not required. The solution itself can be executed on any PostgreSQL instance, after creation of DB (e.g. ats_data), successful connection and execution of SQL scripts in aforementioned order.
 
 

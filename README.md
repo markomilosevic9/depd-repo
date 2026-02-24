@@ -6,7 +6,8 @@ The provided code showcases the design and implementation of a ETL pipeline, inc
 
 ## Documentation
 
-A detailed explanation of the solution design, approach and rationale is provided in `Documentation.pdf`
+A detailed explanation of the solution design, approach and rationale is provided in [Documentation](https://github.com/markomilosevic9/depd-repo/blob/main/Documentation.pdf) PDF file.
+
 
 The document includes:
 - Data modeling explanation  

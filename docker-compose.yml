@@ -1,0 +1,21 @@
+services:
+  depd-postgres-storage:
+    image: postgres:14
+    container_name: depd-postgres-storage
+    hostname: depd-postgres-storage
+    environment:
+      POSTGRES_USER: storage
+      POSTGRES_PASSWORD: storage
+      POSTGRES_DB: ats_data
+    volumes:
+      - postgres_storage_data:/var/lib/postgresql/data
+    ports:
+      - "5433:5432"
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "storage"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  postgres_storage_data:
